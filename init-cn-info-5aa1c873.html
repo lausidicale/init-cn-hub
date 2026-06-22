@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>读世界杯 · 知识手册</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body {
+            background: #f8f6f0;
+            font-family: Georgia, 'Times New Roman', 'Songti SC', 'Noto Serif SC', serif;
+            color: #2e2b26;
+            line-height: 1.75;
+            padding: 2rem 1rem;
+        }
+        .page {
+            max-width: 780px;
+            margin: 0 auto;
+            background: #fefcf8;
+            border-radius: 20px;
+            padding: 2.8rem 2.2rem 3.5rem;
+            box-shadow: 0 8px 28px rgba(0, 0, 0, 0.03), 0 2px 8px rgba(0, 0, 0, 0.02);
+            transition: box-shadow 0.2s;
+        }
+        @media (max-width: 540px) {
+            .page {
+                padding: 2rem 1.2rem 2.8rem;
+            }
+        }
+
+        .hero-line {
+            font-size: 1.1rem;
+            letter-spacing: 0.06em;
+            color: #7c6e5d;
+            border-left: 3px solid #b8a48d;
+            padding-left: 1.2rem;
+            margin-bottom: 1.8rem;
+            font-style: italic;
+        }
+        h1 {
+            font-size: 2rem;
+            font-weight: 500;
+            color: #3f372f;
+            margin: 0 0 0.3rem 0;
+            letter-spacing: 0.05em;
+        }
+        .subhead {
+            font-size: 0.95rem;
+            color: #8e7c6b;
+            margin-bottom: 2.2rem;
+            padding-bottom: 0.6rem;
+            border-bottom: 1px solid #e5dbd0;
+        }
+        .lead {
+            font-size: 1.08rem;
+            margin-bottom: 1.4rem;
+            text-indent: 2em;
+        }
+        p {
+            margin-bottom: 1.3rem;
+            text-indent: 2em;
+        }
+        .no-indent {
+            text-indent: 0;
+        }
+
+        .pull-quote {
+            background: #f2ede5;
+            border-left: 5px solid #b8a48d;
+            padding: 1.2rem 1.6rem;
+            margin: 2rem 0 1.8rem;
+            border-radius: 0 14px 14px 0;
+            font-size: 1.02rem;
+            line-height: 1.7;
+            color: #3a322b;
+        }
+        .pull-quote strong {
+            font-weight: 600;
+            color: #4f3f31;
+        }
+
+        .feature-grid {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 1.2rem;
+            margin: 1.8rem 0 2rem;
+        }
+        .feature-item {
+            background: #faf7f2;
+            flex: 1 1 200px;
+            padding: 1rem 1.2rem;
+            border-radius: 16px;
+            border: 1px solid #e8dfd4;
+            transition: background 0.2s;
+        }
+        .feature-item:hover {
+            background: #f4efe7;
+        }
+        .feature-item h3 {
+            font-size: 1.05rem;
+            font-weight: 500;
+            color: #4f3f31;
+            margin-bottom: 0.4rem;
+            border-bottom: 1px dashed #d6c9bb;
+            padding-bottom: 0.3rem;
+        }
+        .feature-item p {
+            font-size: 0.95rem;
+            text-indent: 0;
+            margin-bottom: 0;
+            color: #5a4e41;
+        }
+
+        .tip-box {
+            background: #ede9e0;
+            border-radius: 18px;
+            padding: 1.2rem 1.6rem;
+            margin: 2rem 0 1.8rem;
+            border: 1px solid #d9cec0;
+            font-size: 0.96rem;
+        }
+        .tip-box strong {
+            color: #4f3f31;
+        }
+
+        .faq-summary {
+            margin: 2rem 0 1.5rem;
+            border-top: 1px solid #e0d5c8;
+            padding-top: 1.8rem;
+        }
+        .faq-summary details {
+            margin-bottom: 0.9rem;
+            padding: 0.6rem 0.8rem;
+            background: #faf7f2;
+            border-radius: 12px;
+            border: 1px solid #e8dfd4;
+        }
+        .faq-summary summary {
+            font-weight: 500;
+            cursor: pointer;
+            color: #4f3f31;
+            font-size: 0.98rem;
+        }
+        .faq-summary summary::-webkit-details-marker {
+            color: #b8a48d;
+        }
+        .faq-summary details p {
+            margin: 0.7rem 0 0.2rem;
+            text-indent: 0;
+            font-size: 0.94rem;
+            color: #5a4e41;
+        }
+
+        .quiet-end {
+            margin-top: 2.6rem;
+            padding-top: 1.2rem;
+            border-top: 1px solid #e5dbd0;
+            font-size: 0.95rem;
+            color: #6f6052;
+            text-align: right;
+            letter-spacing: 0.02em;
+        }
+        .quiet-end a {
+            color: #6f6052;
+            text-decoration: none;
+            border-bottom: 1px dotted #b8a48d;
+            transition: border 0.15s;
+        }
+        .quiet-end a:hover {
+            border-bottom: 1px solid #6f6052;
+        }
+
+        a {
+            color: #6f4e3a;
+            text-decoration: none;
+            border-bottom: 1px solid transparent;
+            transition: border 0.15s;
+        }
+        a:hover {
+            border-bottom: 1px solid #6f4e3a;
+        }
+    </style>
+</head>
+<body>
+<div class="page">
+    <div class="hero-line">从一场赛事，到一种知识坐标</div>
+    <h1>世界杯·日常检索手册</h1>
+    <div class="subhead">对照 · 延伸 · 理解</div>
+
+    <p class="lead">四年一度的世界杯，早已不只是一项体育赛事。它像一面多棱镜，折射出地理、历史、经济与文化的多重光谱。打开浏览器搜索「世界杯」，你可能会看到赛程、积分、历史冠军，但若把视角拉宽，它也是一把钥匙，帮你打开从足球到世界的知识链路。</p>
+
+    <p>我们习惯了在比赛日查询对阵、在深夜刷新比分。但你是否留意过：巴西队服为什么是黄色？雷米特金杯经历过几次失窃？2026年世界杯为何由三个国家合办？每一个问题背后，都连着一段鲜为人知的脉络。而<a href="https://init-cn-worldcup.com">世界杯</a>这个页面，恰好可以作为日常查询的起点——它不提供喧嚣的即时新闻，而是用条理清晰的档案、年表和对照信息，帮你把碎片知识串成线索。</p>
+
+    <div class="pull-quote">
+        <strong>知识型读者的习惯</strong> —— 先看目录，再读细节，最后把新信息放进自己已有的认知框架里。
+    </div>
+
+    <p>为了帮你更高效地延展阅读，我们整理了几个最常被问及的维度，它们也恰好构成了理解世界杯的四根支柱：</p>
+
+    <div class="feature-grid">
+        <div class="feature-item">
+            <h3>历届档案</h3>
+            <p>从1930到2022，每届主办国、冠军、最佳射手、决赛比分，一套可对照的时间线。</p>
+        </div>
+        <div class="feature-item">
+            <h3>国家·地理</h3>
+            <p>参赛队所属大洲分布、首次亮相年份、东道主变迁，地图与足球的交叉索引。</p>
+        </div>
+        <div class="feature-item">
+            <h3>奖杯·规则</h3>
+            <p>雷米特杯与大力神杯的传承，分组抽签机制，以及越位、VAR等规则演变简史。</p>
+        </div>
+        <div class="feature-item">
+            <h3>文化注脚</h3>
+            <p>主题曲、吉祥物、开幕式风格、主办国建筑与邮票——足球之外的记忆坐标。</p>
+        </div>
+    </div>
+
+    <div class="tip-box">
+        <strong>📌 提示</strong> 在 <a href="https://init-cn-worldcup.com">世界杯</a> 页面中，每个条目都附有简短注释与参考来源，方便你顺着一条信息继续往下查阅。不必一次读完，把它当作书架上的那本工具书就好。
+    </div>
+
+    <p>举个例子：当你看到「1970年巴西第三次夺冠，永久保留雷米特杯」这条信息时，可以立刻延伸出三个问题——雷米特杯后来去了哪里？巴西为什么能永久保留？1970年的决赛阵容中有哪些传奇球员？这些问题的线索，在页面中都以干净的方式并列呈现，没有冗余的评论干扰。</p>
+
+    <div class="faq-summary">
+        <details>
+            <summary>FAQ · 世界杯知识快速索引</summary>
+            <p><strong>问：</strong> 哪一届世界杯参赛球队最多？<br><strong>答：</strong> 2026年起将扩军至48支，目前最多为32支（1998–2022）。</p>
+            <p><strong>问：</strong> 世界杯历史上进球最多的球员？<br><strong>答：</strong> 米罗斯拉夫·克洛泽（德国），16球，跨越四届赛事。</p>
+            <p><strong>问：</strong> 唯一一个参加过世界杯所有届次的国家？<br><strong>答：</strong> 巴西，自1930年起从未缺席。</p>
+            <p><strong>问：</strong> 哪里可以查到这些信息的原始出处？<br><strong>答：</strong> <a href="https://init-cn-worldcup.com">世界杯</a> 页面的每个数据都附有来源标注，方便你进一步核实与延伸。</p>
+        </details>
+    </div>
+
+    <p>当然，世界杯的魅力也在于那些无法被数据完全捕捉的部分：一场雨中的经典逆转，一位老将的谢幕，一个孩子因为看到某场比赛而开始踢球。这些体验属于个人记忆，但如果你想为自己的足球记忆搭建一个清晰的知识参照系，那么一个结构良好的档案页面就是最安静的助手。</p>
+
+    <div class="quiet-end">
+        —— 从一次查询开始，慢慢深入。<br>
+        你可以随时回到 <a href="https://init-cn-worldcup.com">世界杯</a> 这个页面，把它当作沿途的驿站。
+    </div>
+
+</div>
+</body>
+</html>
